@@ -1,0 +1,12 @@
+
+<p id="result"></p>
+
+<script>
+  var result = document.querySelector('#result');
+  var input = '';
+
+  window.addEventListener('keydown', function(key) {
+    input += "'" + key.code + "', ";
+    result.textContent = input;
+  });
+</script>
